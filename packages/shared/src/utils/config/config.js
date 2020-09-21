@@ -2,9 +2,9 @@
 import { isBot } from '../platform';
 
 // TODO [app-link-refactor] - Replace with dedicated deriv crypto app id
-const DERIV_CRYPTO_STAGING_APP_ID = 16929;
-const DERIV_CRYPTO_STAGING_DBOT_APP_ID = 16929;
-const DERIV_CRYPTO_APP_ID = 16929;
+const DERIV_CRYPTO_STAGING_APP_ID = 23697;
+const DERIV_CRYPTO_STAGING_DBOT_APP_ID = 23697;
+const DERIV_CRYPTO_APP_ID = 23697;
 
 /*
  * Configuration values needed in js codes
@@ -20,6 +20,7 @@ export const domain_app_ids = {
     'app.deriv.com': 16929,
     'app.derivcrypto.com': DERIV_CRYPTO_APP_ID,
     'binary.com': 1,
+    'deriv.win': 23697,
 };
 
 const binary_desktop_app_id = 14473;
@@ -35,7 +36,7 @@ export const isProduction = () => {
 
 export const getAppId = () => {
     let app_id = null;
-    const user_app_id = ''; // you can insert Application ID of your registered application here
+    const user_app_id = '23697'; // you can insert Application ID of your registered application here
     const config_app_id = window.localStorage.getItem('config.app_id');
     const is_crypto_app = window.localStorage.getItem('is_deriv_crypto_app') === 'true';
 
